@@ -10,3 +10,6 @@
 - npm build       # 编译生成静态文件
 
 ### 后端代码运行
+
+- go mod tidy     # 安装依赖文件
+- go run main.go  # 运行代码
