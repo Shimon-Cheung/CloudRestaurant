@@ -2,5 +2,11 @@
   "app_name": "CloudRestaurant",
   "app_mode": "debug",
   "app_host": "localhost",
-  "app_port": "8090"
+  "app_port": "8090",
+  "email": {
+    "user": "zxm19950605@163.com",
+    "pass": "zxm2011",
+    "host": "smtp.163.com",
+    "port": "25"
+  }
 }

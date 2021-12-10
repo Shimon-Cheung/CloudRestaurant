@@ -9,6 +9,7 @@ import (
 //路由设置,用于注册路由
 func registerRouter(router *gin.Engine) {
 	new(controller.HelloController).Router(router)
+	new(controller.MemberController).Router(router)
 }
 
 func main() {
@@ -23,5 +24,8 @@ func main() {
 
 	registerRouter(app)
 
-	app.Run(cfg.AppHost + ":" + cfg.AppPort)
+	err = app.Run(cfg.AppHost + ":" + cfg.AppPort)
+	if err != nil {
+		return
+	}
 }
